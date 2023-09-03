@@ -65,7 +65,7 @@ def prediction(request):
         chances = (sum(predi[0][i:])/sum(predi[0]))*100
         top_five[predictedLabel2[1]] = chances
     
-    return render(request, 'ImageAPI/prediction.html', {"file_path": file_url, "predictedLabel": predictedLabel[1], 
+    return render(request, 'prediction.html', {"file_path": file_url, "predictedLabel": predictedLabel[1], 
                                                'top_five': top_five})
 
 
