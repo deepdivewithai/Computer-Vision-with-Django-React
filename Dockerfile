@@ -3,7 +3,7 @@ FROM python:3.10.10
 
 # Set environment variables (optional)
 ENV PYTHONUNBUFFERED 1
-ENV DJANGO_SETTINGS_MODULE API.settings
+# ENV DJANGO_SETTINGS_MODULE API.settings
 
 # Create and set the working directory
 RUN mkdir /app
